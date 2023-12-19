@@ -1,0 +1,32 @@
+{
+  "title": "React Starter",
+  "description": "",
+  "head": "<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+  "htmlAttrs": "lang=\"en\" class=\"\"",
+  "tags": [],
+  "activeEditor": "script",
+  "markup": {
+    "language": "html",
+    "content": "<div id=\"app\">Loading...</div>\n"
+  },
+  "style": {
+    "language": "css",
+    "content": ".container,\n.container button {\n  text-align: center;\n  font: 1em sans-serif;\n}\n.logo {\n  width: 150px;\n}\n"
+  },
+  "script": {
+    "language": "jsx",
+    "content": "import React, { useState } from \"react\";\nimport { createRoot } from \"react-dom/client\";\n\nfunction App(props) {\n  const [count, setCount] = useState(0);\n  return (\n    <div className=\"container\">\n      <h1>Hello, {props.name}!</h1>\n      <img className=\"logo\" alt=\"logo\" src=\"https://livecodes.io/livecodes/assets/templates/react.svg\" />\n      <p>You clicked {count} times.</p>\n      <button onClick={() => setCount(count + 1)}>Click me</button>\n    </div>\n  );\n}\n\nconst root = createRoot(document.querySelector(\"#app\"));\nroot.render(<App name=\"React\" />);\n"
+  },
+  "stylesheets": [],
+  "scripts": [],
+  "cssPreset": "",
+  "processors": [],
+  "customSettings": {},
+  "imports": {},
+  "types": {},
+  "tests": {
+    "language": "typescript",
+    "content": ""
+  },
+  "version": "19"
+}
